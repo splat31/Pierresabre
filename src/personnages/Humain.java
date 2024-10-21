@@ -10,6 +10,7 @@ public class Humain {
 		this.fav = fav;
 		this.argent = argent;
 	}
+	
 	public String getNom() {
 		return nom;
 	}
@@ -21,7 +22,7 @@ public class Humain {
 		System.out.println("("+ nom + ") - " + texte );
 	}
 	public void direBonjour() {
-		this.parler("Bonjour ! Je m’appelle " + nom + " Set j’aime boire du" + fav);
+		this.parler("Bonjour ! Je m’appelle " + nom + " Set j’aime boire du " + fav);
 	}
 	
 	public void boire() {
