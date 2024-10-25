@@ -22,7 +22,7 @@ public class Humain {
 		System.out.println("("+ nom + ") - " + texte );
 	}
 	public void direBonjour() {
-		this.parler("Bonjour ! Je m’appelle " + nom + " et j’aime boire du " + fav);
+		this.parler("Bonjour ! Je m’appelle " + nom + " et j’aime boire du " + fav+".");
 	}
 	
 	public void boire() {
@@ -40,7 +40,7 @@ public class Humain {
 	}
 	
 	public void gagnerArgent(int gain) {
-		
+		argent=argent+gain;
 	}
 	
 	public void perdreArgent(int perte) {
