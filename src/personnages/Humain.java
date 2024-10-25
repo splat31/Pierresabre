@@ -1,9 +1,9 @@
 package personnages;
 
 public class Humain {
-	private String nom;
-	private String fav;
-	private int argent;
+	protected String nom;
+	protected String fav;
+	protected int argent;
 
 	public Humain(String nom, String fav,int argent) {
 		this.nom = nom;
@@ -22,11 +22,11 @@ public class Humain {
 		System.out.println("("+ nom + ") - " + texte );
 	}
 	public void direBonjour() {
-		this.parler("Bonjour ! Je m’appelle " + nom + " Set j’aime boire du " + fav);
+		this.parler("Bonjour ! Je m’appelle " + nom + " et j’aime boire du " + fav);
 	}
 	
 	public void boire() {
-		this.parler("Mmmm, un bon verre de" + fav + "! GLOUPS !");
+		this.parler("Mmmm, un bon verre de " + fav + "! GLOUPS !");
 	}
 	
 	public void acheter(String bien, int prix) {
@@ -44,7 +44,7 @@ public class Humain {
 	}
 	
 	public void perdreArgent(int perte) {
-		
+		argent=argent-perte;
 	}
 
 }
