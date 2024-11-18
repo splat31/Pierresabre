@@ -15,6 +15,11 @@ public class Yakuza extends Humain{
 		return clan;
 	}
 	
+	@Override
+	public void direBonjour() {
+		super.direBonjour();
+		this.parler("Mon clan est celui de "+clan+".");
+	}
 	
 	public void extorquer(Commercant victime) {
 		this.parler("Tiens, tiens, ne serait-ce pas un faible marchand qui passe par là ?");
