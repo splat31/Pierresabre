@@ -63,7 +63,7 @@ public class Humain {
 	}
 	
 	public void repondre(Humain autrehumain) {
-		this.parler("Bonjour " + this.nom +" !");
+		autrehumain.parler("Bonjour " + this.nom +" !");
 		autrehumain.memoriser(this);
 	}
 	
